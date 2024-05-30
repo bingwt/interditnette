@@ -61,4 +61,5 @@ for each in sys.argv[1:]:
         func_permise(each)
     permise(each)
 for each in sys.argv[1:]:
-    interdit(each)
+    if not each.endswith(".permise"):
+        interdit(each)
