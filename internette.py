@@ -17,14 +17,12 @@ def func_use(line):
     if match:
         return match.group(1)
 
-def allowed_funcs(filename):
-    allowed = []
+def func_permise(filename):
     with open(filename) as file:
         while line := file.readline():
             funcs = line.rstrip().split(", ")
             for func in funcs:
                 allowed.append(func.split(",")[0])
-    return (allowed)
 
 def permise(filename):
     with open(filename) as file:
@@ -59,6 +57,8 @@ def interdit(filename):
             print(f"{filename}: OK!")
 
 for each in sys.argv[1:]:
+    if each.endswith(".permise"):
+        func_permise(each)
     permise(each)
 for each in sys.argv[1:]:
     interdit(each)
