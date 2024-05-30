@@ -8,17 +8,32 @@ norminette, moulinette, baguette?
 
 ---
 # Download
+## 1. Go to the root directory
 ```shell
 cd ~
-gitclone https://github.com/bingwt/interditnette.git
+```
+---
+## 2. Clone the repo
+```shell
+git clone https://github.com/bingwt/interditnette.git
 ```
 ---
 # Install
 ## zsh
+### 1. Add alias to interditnette script
 ```shell
 echo "alias interditnette=$HOME/interditnette/interditnette.py" >> ~/.zshrc
 ```
-## bash
+### 2. Source `.zshrc`
 ```shell
-echo "alias interditnette=$HOME/interditnette/interditnette.py" >> ~/.zshrc
+source ~/.zshrc
+```
+## bash
+### 1. Add alias to interditnette script
+```shell
+echo "alias interditnette=$HOME/interditnette/interditnette.py" >> ~/.bashrc
+```
+### 2. Source `.zshrc`
+```shell
+source ~/.bashrc
 ```
