@@ -1,0 +1,9 @@
+open, close, read, write,
+malloc, free, perror,
+strerror, exit
+sin, cos, tan, atan
+mlx_destroy_image, mlx_loop, mlx_destroy,
+mlx_new_image, mlx_put_image_to_window, 
+mlx_destroy_image, mlx_init, mlx_destroy_window
+mlx_destroy_display, mlx_hook
+show_matrix
