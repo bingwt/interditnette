@@ -37,7 +37,5 @@ def interdit(filename):
                 print(forbidden_func)
             i += 1
 
-files = sys.argv[1]
-if "*" in files:
-    print("wildcard")
-interdit(sys.argv[1])
+for each in sys.argv[1:]:
+    interdit(each)
