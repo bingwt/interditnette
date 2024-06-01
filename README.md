@@ -37,3 +37,22 @@ echo "alias interditnette=$HOME/interditnette/interditnette.py" >> ~/.bashrc
 ```shell
 source ~/.bashrc
 ```
+---
+# Usage
+## Note
+To use interditnette, your files must be [norminette friendly](https://github.com/42School/norminette).
+<br />
+Interditnette takes in any `*.c/*.h/*.permise` files and searches for function definitions. 
+## Example
+```shell
+interditnette ./srcs/*.c ./includes/*.h allowed.permise
+```
+### `.permise`
+```
+open, close, read, write,
+malloc, free, perror,
+strerror, exit
+```
+The `.permise` file can be populated with any allowed functions to have them be filtered out.
+<br />
+I.e Just copy them from the allowd functions in the subject pdf.
