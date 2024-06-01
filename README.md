@@ -8,7 +8,7 @@ norminette, moulinette, baguette?
 
 ---
 # Download
-## 1. Go to the root directory
+## 1. Go to your home directory
 ```shell
 cd ~
 ```
