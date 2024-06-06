@@ -35,9 +35,8 @@ def permise(filename):
 
 def interdit(filename):
     p_flag = 0
-    for each in ['open', 'close', 'read', 'write', 'malloc', 'free', 'perror', 'strerror', 'exit']:
+    for each in ['main', 'while', 'if', 'else']:
         allowed.append(each)
-    allowed.append("main")
     forbidden = []
     with open(filename) as file:
         i = 1
